@@ -1,0 +1,12 @@
+{
+  "_id": "5aa8ab883bfa39001ca537cc",
+  "nodeId": "5aa8ab863bfa39001ca537c9",
+  "type": "code:0.0.1:local:32498h32f2",
+  "data": {
+    "key": "525d1100-71ab-40fc-893e-02940e7b7211",
+    "code": "(()=>{\n  \n  // This code handles an incoming \"run_action_sequence...\"\n  \n  // expcting a Node that specifies an array of actions to run! \n  // - this is useful when you want to include Authentication \n  //   - every command should include Auth+More \n  \n  \n  return new Promise(async (resolve,reject)=>{\n    try {\n      \n      resolve({\n        type: 'pong:0.0.1:local:8992389hfdg',\n        data: 'pong'\n      })\n      \n    }catch(err){\n      resolve({ERROR: true, err: err.toString()});\n    }\n    \n  })\n\n  \n})()"
+  },
+  "active": true,
+  "createdAt": 1521003400550,
+  "updatedAt": null
+}
