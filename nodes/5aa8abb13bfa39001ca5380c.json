@@ -1,0 +1,12 @@
+{
+  "_id": "5aa8abb13bfa39001ca5380c",
+  "nodeId": "5aa8abb03bfa39001ca5380a",
+  "type": "code:0.0.1:local:32498h32f2",
+  "data": {
+    "key": "267e87c1-8497-4eeb-8af6-4e50e0098a6f",
+    "code": "(()=>{\n  return new Promise(async (resolve, reject)=>{\n    try {\n      \n      // todo: make a request to a remote Second to be taught something \n      // - \"i want to learn about X\" \n      \n      let saved;\n      try {\n        saved = await universe.updateNode(INPUT.data);\n        saved = {\n          type: 'saved_node:...',\n          data: saved\n        }\n      }catch(err){\n        saved = {\n          type: 'error_failed_saving:...',\n          data: {\n            error: true,\n            err: err.toString()\n          }\n        }\n      }\n      \n      resolve({\n        saved,\n        INPUT\n      });\n        \n        \n    }catch(err){\n      resolve({ERROR: true, err: err.toString()});\n    }\n    \n    \n  })\n})()"
+  },
+  "active": true,
+  "createdAt": 1521003441975,
+  "updatedAt": null
+}
