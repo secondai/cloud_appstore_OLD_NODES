@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8abba3bfa39001ca53818",
+  "nodeId": "5aa8abb73bfa39001ca53815",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: initiate an external connection (act as Client)"
+  },
+  "active": true,
+  "createdAt": 1521003450343,
+  "updatedAt": null
+}
