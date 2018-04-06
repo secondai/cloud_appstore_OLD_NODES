@@ -1,0 +1,9 @@
+{
+	"name":"Default Cloud App Store",
+	"version" : "0.0.1",
+	"author" : "Nicholas Reed",
+	"secondtype" : "bundle",
+	"environment" : {
+		"dependencies" : []
+	}
+}
