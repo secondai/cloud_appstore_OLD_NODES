@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8ac303bfa39001ca53833",
+  "nodeId": "5aa8ac2d3bfa39001ca53830",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "Register identity on stellar. Uses STELLAR_SEED"
+  },
+  "active": true,
+  "createdAt": 1521003568907,
+  "updatedAt": null
+}
