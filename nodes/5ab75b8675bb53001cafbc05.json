@@ -1,0 +1,11 @@
+{
+  "_id": "5ab75b8675bb53001cafbc05",
+  "nodeId": "5ab75b8375bb53001cafbc02",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "manageData for identity on stellar. Uses STELLAR_SEED"
+  },
+  "active": true,
+  "createdAt": 1521965958155,
+  "updatedAt": null
+}
