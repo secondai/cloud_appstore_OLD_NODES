@@ -1,0 +1,11 @@
+{
+  "_id": "5aaee1aedb76df005289b7f9",
+  "nodeId": "5aaee1abdb76df005289b7f7",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: receives text for parsing and running some code/actions"
+  },
+  "active": true,
+  "createdAt": 1521410478065,
+  "updatedAt": null
+}
