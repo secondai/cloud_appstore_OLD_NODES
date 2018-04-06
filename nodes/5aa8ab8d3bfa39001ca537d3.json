@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8ab8d3bfa39001ca537d3",
+  "nodeId": "5aa8ab8c3bfa39001ca537d1",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "Capability: TalkToSecond"
+  },
+  "active": true,
+  "createdAt": 1521003405320,
+  "updatedAt": null
+}
