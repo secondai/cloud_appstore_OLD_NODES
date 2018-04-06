@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8aba83bfa39001ca537fd",
+  "nodeId": "5aa8aba63bfa39001ca537fa",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: search internal datasource (people searching my data) Nodes"
+  },
+  "active": true,
+  "createdAt": 1521003432171,
+  "updatedAt": null
+}
