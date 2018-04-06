@@ -1,0 +1,14 @@
+{
+  "_id": "5aa8ab963bfa39001ca537e1",
+  "nodeId": "5aa8ab3b3bfa39001ca537bd",
+  "type": "internal_user:0.0.1:local:98h32",
+  "data": {
+    "roles": [
+      "root"
+    ],
+    "passphrase": "testuserpassphrase"
+  },
+  "active": true,
+  "createdAt": 1521003414077,
+  "updatedAt": null
+}

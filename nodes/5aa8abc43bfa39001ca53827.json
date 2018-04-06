@@ -1,0 +1,12 @@
+{
+  "_id": "5aa8abc43bfa39001ca53827",
+  "nodeId": "5aa8abc33bfa39001ca53825",
+  "type": "code:0.0.1:local:32498h32f2",
+  "data": {
+    "key": "096ef003-9e52-4f4c-8d84-3a38d71088a7",
+    "code": "(()=>{\n  return new Promise(async (resolve, reject)=>{\n    try {\n      \n      // INPUT: {\n      //   type: 'request_file_upload:0.0.1:local:00838923flkwne',\n      //   data: {\n      //     key: String,\n      //   }\n      // }\n      \n      try {\n        let SignedUrlNode = await universe.loadAndRunCapability('File',{},{\n          type: 'standard_capability_action:0.0.1:local:298j291bs',\n          data: {\n            action: 'signGet',\n            options: {\n              type: '...',\n              data: {\n                key: INPUT.data.key\n              }\n            }\n          }\n        });\n        \n        return resolve({\n          type: 'request_file_get_response:0.0.1:local:902jf908j139001',\n          data: SignedUrlNode.data\n        });\n        \n      }catch(err){\n        console.error('FAILED File.signGet',err);\n        \n        return resolve({\n          // savedNode\n          type: 'error:..',\n          data: {\n            msg: 'Failed File.signGet',\n            INPUT,\n            error: true,\n            err: err.toString()\n          }\n        });\n        \n      }\n      \n      \n      \n      \n    }catch(err){\n      resolve({ERROR: true, err: err.toString()});\n    }\n    \n    \n  })\n})()"
+  },
+  "active": true,
+  "createdAt": 1521003460412,
+  "updatedAt": null
+}

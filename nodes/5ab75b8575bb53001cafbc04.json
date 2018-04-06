@@ -1,0 +1,15 @@
+{
+  "_id": "5ab75b8575bb53001cafbc04",
+  "nodeId": "5ab75b8375bb53001cafbc02",
+  "type": "code:0.0.1:local:32498h32f2",
+  "data": {
+    "author": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCcuXovU+RZy85KMqLakYSH1mdV\nWdpEUtgcXUyGyU5hVeTO7BkV/kxeC2upcxOwNnrBOdsvHI3nrrILgt90/hCSHKzx\nhOFLREorGoKtSEHxI7/SnzzlWtV3gT/IP5GVHIyvuJBx3hCti0dH55DZG8iMGZ2y\ncGpV73Dez3hHmeBh6wIDAQAB\n-----END PUBLIC KEY-----",
+    "key": "5168e05a-daa7-404c-9a57-b7547cf73843",
+    "code": "(()=>{\n  return new Promise(async (resolve, reject)=>{\n    try {\n      \n      \n      console.log('INPUT for identity_manage_data:', JSON.stringify(INPUT,null,2));\n      \n      // // Need to create a local Identity, and authenticate with the remote Second to Learn from \n      // // - uses a constant value (token) from the remote Second! \n      // let internalIdentityNode = await universe.loadAndRunCapability('Identity',{},{\n      //   type: 'standard_capability_action:0.0.1:local:298j291bs',\n      //   data: {\n      //     action: 'getPrivate',\n      //     options: {}\n      //   }\n      // });\n      \n      // console.log('internalIdentityNode', JSON.stringify(internalIdentityNode,null,2));\n      \n      // Expecting node manage_data_info as INPUT.data\n      \n      \n      // Register Identity on remote \n      let manageDataResult = await universe.loadAndRunCapability('Identity',{},{\n        type: 'standard_capability_action:0.0.1:local:298j291bs',\n        data: {\n          action: 'manageData',\n          options: {\n            network: INPUT.data.data.network,\n            username: INPUT.data.data.username,\n            field: INPUT.data.data.field,\n            nodeValue: INPUT.data.data.nodeValue,\n          }\n        }\n      });\n      \n      \n      return resolve({\n        type: 'manage_data_result:0.0.1...',\n        data: {\n          ...manageDataResult\n          // WORDS: universe.env.STARTUP_REACHABLE_WORDS,\n          // publicKey: newIdentityNode.data.public,\n          // connection: newIdentityNode.nodes[0].data.connection\n        }\n      });\n      \n      \n        \n    }catch(err){\n      resolve({ERROR: true, err: err.toString()});\n    }\n    \n    \n  })\n})()",
+    "note": "action: Identity Manage Data",
+    "version": "2"
+  },
+  "active": true,
+  "createdAt": 1521965957351,
+  "updatedAt": null
+}

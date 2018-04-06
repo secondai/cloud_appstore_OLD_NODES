@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8abaa3bfa39001ca53801",
+  "nodeId": "5aa8abaa3bfa39001ca53800",
+  "type": "order_level:0.0.1:local:382hf273",
+  "data": {
+    "level": 1000
+  },
+  "active": true,
+  "createdAt": 1521003434657,
+  "updatedAt": null
+}

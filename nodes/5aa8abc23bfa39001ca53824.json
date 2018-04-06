@@ -1,0 +1,13 @@
+{
+  "_id": "5aa8abc23bfa39001ca53824",
+  "nodeId": "5aa8abbe3bfa39001ca5381f",
+  "type": "include_in_copy:0.0.1:local:k2fj23443f4",
+  "data": {
+    "slugs": [
+      "learn"
+    ]
+  },
+  "active": true,
+  "createdAt": 1521003458422,
+  "updatedAt": null
+}

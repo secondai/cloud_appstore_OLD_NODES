@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8abaa3bfa39001ca53800",
+  "nodeId": "5aa8ab3b3bfa39001ca537bd",
+  "type": "permission_function:0.0.1:local:2387872h3f2",
+  "data": {
+    "method": "read"
+  },
+  "active": true,
+  "createdAt": 1521003434016,
+  "updatedAt": null
+}

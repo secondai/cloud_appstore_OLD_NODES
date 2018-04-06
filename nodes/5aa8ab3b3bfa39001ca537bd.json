@@ -1,0 +1,14 @@
+{
+  "_id": "5aa8ab3b3bfa39001ca537bd",
+  "nodeId": "5ac447907f0fac001d8e58f4",
+  "type": "platform_nodes:Qmtlksjflsdjfljf",
+  "data": {
+    "platform": "cloud",
+    "owner": "secondai",
+    "repo": "bundle_cloud_smart_assistant_default",
+    "defaultBranch": "master"
+  },
+  "active": true,
+  "createdAt": 1521003323336,
+  "updatedAt": 1522816708339
+}

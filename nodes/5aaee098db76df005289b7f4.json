@@ -1,0 +1,11 @@
+{
+  "_id": "5aaee098db76df005289b7f4",
+  "nodeId": "5aaee098db76df005289b7f3",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "Capability: UserCommand"
+  },
+  "active": true,
+  "createdAt": 1521410200914,
+  "updatedAt": null
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "5aa8ab9b3bfa39001ca537ea",
+  "nodeId": "5aa8ab9a3bfa39001ca537e8",
+  "type": "code:0.0.1:local:32498h32f2",
+  "data": {
+    "key": "cab7f1c9-d371-4b3c-8e34-1289a9821bb1",
+    "code": "(()=>{\n  return new Promise(async (resolve, reject)=>{\n    try {\n      \n      // // INPUT:\n      // {\n      //   type: 'string:0.0.1:local:289hf329h93',\n      //   data: 'randomstring/nonce'\n      // }\n      \n      // Challenge start\n      // - get sent something to prove who I am (or who I represent [am signing for])\n      //   - this might be different than what the requestor is expecting! they should handle it accordingly \n      // - return my public key, signed challenge \n      \n      // let MyPrivateIdentity = await universe.capabilities().privateIdentity();\n      // let myPublicKey = MyPrivateIdentity.data.public;\n      // let newChallenge = universe.uuidv4();\n      \n      \n      \n      \n      let newChallenge = universe.uuidv4();\n      \n      \n      // universe.console.log('GOT2 NewChallenge:', INPUT.data.challenge, newChallenge); //, INPUT.data.challenge);\n      \n      \n      // Just using capabilities to sign \n      // - signed result is a StringNode \n      let SignedNode = await universe.capabilities().sign({\n        type: 'string:0.0.1:local:289hf329h93',\n        data: INPUT.data.challenge\n      });\n      \n      // check for publicKey info (ok to allow this person?) \n      // - after I send them something to sign and actually get their identity...\n      //- todo...\n      \n      // Store our challenge (and the publicKey we were sent) in memory, to check in another request/response!\n      universe.globalCache[INPUT.data.publicKey] = newChallenge;\n      \n      \n      resolve({\n        type: 'challenge_start_response:0.0.1:local:2378f37723f22dxc',\n        data: {\n          solution: SignedNode.data,\n          challenge: newChallenge\n        }\n      });\n        \n        \n    }catch(err){\n      resolve({ERROR: true, err: err.toString()});\n    }\n    \n    \n  })\n})()"
+  },
+  "active": true,
+  "createdAt": 1521003419760,
+  "updatedAt": null
+}

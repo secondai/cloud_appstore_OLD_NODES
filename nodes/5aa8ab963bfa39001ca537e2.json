@@ -1,0 +1,9 @@
+{
+  "_id": "5aa8ab963bfa39001ca537e2",
+  "nodeId": "5aa8ab3b3bfa39001ca537bd",
+  "type": "identify_token_upgrade_to_internal_user:0.0.1:local:9281198u",
+  "data": null,
+  "active": true,
+  "createdAt": 1521003414833,
+  "updatedAt": null
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8abc53bfa39001ca53828",
+  "nodeId": "5aa8abc33bfa39001ca53825",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: return a signed url to download a file from s3"
+  },
+  "active": true,
+  "createdAt": 1521003461203,
+  "updatedAt": null
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "5aaee098db76df005289b7f3",
+  "nodeId": "5aa8ab3b3bfa39001ca537bd",
+  "type": "capability:0.0.1:local:187h78h23",
+  "data": {
+    "version": "1.0.0",
+    "key": "UserCommand"
+  },
+  "active": true,
+  "createdAt": 1521410200257,
+  "updatedAt": null
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "5ab880cc5a59cf001cb454bf",
+  "nodeId": "5aa8ab3b3bfa39001ca537bd",
+  "type": "node_chain_info:0.0.1:local:3298h92",
+  "data": {
+    "apiAddress": "https://api.getasecond.com",
+    "network": "test",
+    "username": "dev@second",
+    "pubKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBNnFC2kVynYCdh441NxFqB2TV\nKTYZPPZgMfSdqrdCOAFq3g0W2TmvSzS2qY43DV80tpzzENi4bnOkOUFVl9Xi553C\n++hdnqg+pAGbT9P3Cr7r6CN1ZNBPx8JXnyWNfxzNhi+rCma1EpZaoRHbVxTX170V\nW2qyoyZI8qG9rsqB7QIDAQAB\n-----END PUBLIC KEY-----"
+  },
+  "active": true,
+  "createdAt": 1522041036514,
+  "updatedAt": 1522041047320
+}
