@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8ab983bfa39001ca537e5",
+  "nodeId": "5aa8ab963bfa39001ca537e2",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: Upgrade token for identified external (incoming) as an Internal User. Given a passphrase"
+  },
+  "active": true,
+  "createdAt": 1521003416667,
+  "updatedAt": null
+}
