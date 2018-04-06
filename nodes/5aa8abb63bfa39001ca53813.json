@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8abb63bfa39001ca53813",
+  "nodeId": "5aa8abb43bfa39001ca53810",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: forcing to learn a single new Node (handles nodeId and whatnot too!)"
+  },
+  "active": true,
+  "createdAt": 1521003446437,
+  "updatedAt": null
+}
