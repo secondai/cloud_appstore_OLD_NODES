@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8abbc3bfa39001ca5381c",
+  "nodeId": "5aa8abbc3bfa39001ca5381b",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: take a request and search a remote datasource. Does NOT reduce the query at all (that would be handled in a more complex Action type:search_datasources_and_reduce)"
+  },
+  "active": true,
+  "createdAt": 1521003452818,
+  "updatedAt": null
+}
