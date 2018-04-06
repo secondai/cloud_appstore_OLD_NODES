@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8abb23bfa39001ca5380d",
+  "nodeId": "5aa8abb03bfa39001ca5380a",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: update a Node by passing in the new Node"
+  },
+  "active": true,
+  "createdAt": 1521003442595,
+  "updatedAt": null
+}
