@@ -1,0 +1,15 @@
+{
+  "_id": "5aa8ac2f3bfa39001ca53832",
+  "nodeId": "5aa8ac2d3bfa39001ca53830",
+  "type": "code:0.0.1:local:32498h32f2",
+  "data": {
+    "note": "action: Register Identity",
+    "code": "(()=>{\n  return new Promise(async (resolve, reject)=>{\n    try {\n      \n      \n      console.log('INPUT for register_identity:', JSON.stringify(INPUT,null,2));\n      \n      // Need to create a local Identity, and authenticate with the remote Second to Learn from \n      // - uses a constant value (token) from the remote Second! \n      let internalIdentityNode = await universe.loadAndRunCapability('Identity',{},{\n        type: 'standard_capability_action:0.0.1:local:298j291bs',\n        data: {\n          action: 'getPrivate',\n          options: {}\n        }\n      });\n      \n      console.log('internalIdentityNode', JSON.stringify(internalIdentityNode,null,2));\n      \n      \n      // Register Identity on remote \n      let registeredExternal = await universe.loadAndRunCapability('Identity',{},{\n        type: 'standard_capability_action:0.0.1:local:298j291bs',\n        data: {\n          action: 'registerOnChain',\n          options: {\n            words: INPUT.data, // testing002 expecting a string\n            publicKey: internalIdentityNode.data.public,\n            connection: internalIdentityNode.nodes[0].data.connection\n          }\n        }\n      });\n      \n      \n      return resolve({\n        type: 'something2...',\n        data: {\n          registeredExternal\n          // WORDS: universe.env.STARTUP_REACHABLE_WORDS,\n          // publicKey: newIdentityNode.data.public,\n          // connection: newIdentityNode.nodes[0].data.connection\n        }\n      });\n      \n      \n        \n    }catch(err){\n      resolve({ERROR: true, err: err.toString()});\n    }\n    \n    \n  })\n})()",
+    "key": "04589537-9255-4026-92bd-8e3e9b7358d6",
+    "version": "2",
+    "author": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCcuXovU+RZy85KMqLakYSH1mdV\nWdpEUtgcXUyGyU5hVeTO7BkV/kxeC2upcxOwNnrBOdsvHI3nrrILgt90/hCSHKzx\nhOFLREorGoKtSEHxI7/SnzzlWtV3gT/IP5GVHIyvuJBx3hCti0dH55DZG8iMGZ2y\ncGpV73Dez3hHmeBh6wIDAQAB\n-----END PUBLIC KEY-----"
+  },
+  "active": true,
+  "createdAt": 1521003567464,
+  "updatedAt": 1521060993107
+}
