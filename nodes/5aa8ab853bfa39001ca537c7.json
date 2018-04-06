@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8ab853bfa39001ca537c7",
+  "nodeId": "5aa8ab843bfa39001ca537c5",
+  "type": "incoming_query_type_matcher:0.0.1:local:3242rx23rd3",
+  "data": {
+    "typeMatch": "cloud_startup:0.0.1:local:98h198hf32"
+  },
+  "active": true,
+  "createdAt": 1521003397420,
+  "updatedAt": null
+}
