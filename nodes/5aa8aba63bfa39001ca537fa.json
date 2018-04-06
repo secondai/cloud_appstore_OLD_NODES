@@ -1,0 +1,11 @@
+{
+  "_id": "5aa8aba63bfa39001ca537fa",
+  "nodeId": "5aa8ab3b3bfa39001ca537bd",
+  "type": "search_internal_datasource:0.0.1:local:2h3ufih8s9h2f",
+  "data": {
+    "codeIGNORE": "(()=>{\n  return new Promise(async (resolve, reject)=>{\n    \n    // NODE is...?\n    await universe.historyLog({NODE}, 'in-code-log', 'debug')\n    \n    // shouldnt use exactly \"searchMemory\" but should instead have a type/schema also? \n    let nodes = await universe.searchMemory({\n      filter: {\n        // sqlFilter: {\n        //   type: NODE.type,\n        // },\n        // function for returning data from the Node, after filtering a bit \n        // - includes both the Node, and Nodes with nodeId (pointers) \n        filterNodes: tmpNodes=>{\n          // this runs isolated, outside of the above context? (not sure) \n          \n          // action_pointer:0.0.1:local:238972ncr\n          \n          return new Promise((resolve, reject)=>{\n            // if(x==1){\n            //   resolve([{type:'FAKE'}]);\n            // }\n            resolve(tmpNodes);\n          });\n        },\n      }\n    });\n    \n    resolve(nodes);\n    \n    \n    \n  })\n})()"
+  },
+  "active": true,
+  "createdAt": 1521003430198,
+  "updatedAt": null
+}
